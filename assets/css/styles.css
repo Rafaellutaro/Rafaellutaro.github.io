@@ -160,7 +160,7 @@ img {
 
 /*==================== LAYOUT ====================*/
 .container {
-  max-width: 768px;
+  max-width: 790px;
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -812,6 +812,24 @@ img {
   padding-top: 3rem;
 }
 
+.project__container{
+  display: block;
+}
+
+.project__title{
+  text-align: center;
+}
+
+.project__data{
+  justify-items: center;
+}
+
+.button__contact{
+  display: block;
+  text-align: center;
+  width: 40%;
+}
+
 .project__title{
   font-size: var(--h2-font-size);
   margin-bottom: var(--mb-0-75);
@@ -875,11 +893,13 @@ img {
 /*==================== CONTACT ME ====================*/
 
 .contact__container {
+  justify-items: center;
   row-gap: 3rem;
 }
 
 .contact__information{
   display: flex;
+  margin: var(--mb-1-5); 
   margin-bottom: var(--mb-2);
 }
 
@@ -1074,6 +1094,10 @@ img {
     width: 200px;
   }
 
+  .button__contact{
+    width: 50%;
+  }
+
   .testimonial__data,
   .testimonial__header{
     flex-direction: column;
@@ -1089,6 +1113,19 @@ img {
   .testimonial__description{
     text-align: center;
   }
+
+  .contact__container {
+    display: flex; 
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .contact__information{
+    width: 55%;
+    align-self: center;
+  }
+
+
 }
 
 /* For medium devices */
@@ -1107,6 +1144,10 @@ img {
     justify-content: center;
   }
 
+  .button__contact{
+    width: 35%;
+  }
+
   .about__container,
   .skills__container,
   .portfolio__content,
@@ -1120,6 +1161,17 @@ img {
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .contact__information{
+    width: 35%;
+    align-self: center;
   }
 }
 
@@ -1272,6 +1324,14 @@ img {
 
   .project__data{
     padding-top: .8rem;
+  }
+
+  .contact__container {
+    flex-direction: row;
+  }
+
+  .contact__information{
+    align-self: center;
   }
 
   .footer__container{
