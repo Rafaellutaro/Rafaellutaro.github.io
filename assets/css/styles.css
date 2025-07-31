@@ -514,7 +514,7 @@ img {
 }
 
 .skills__ingles{
-  width: 90%;
+  width: 92%;
 }
 
 .skills__japan{
@@ -551,6 +551,10 @@ img {
 
 .skills__css{
   width: 75%;
+}
+
+.skills__flutter{
+  width: 55%;
 }
 
 .skills__close .skills__list{
@@ -1047,7 +1051,7 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 567px) {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
