@@ -14,49 +14,49 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive Portfolio Website</title>
+    <title data-i18n="titulo">Portifólio do Rafael</title>
 </head>
 
 <body>
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">Rafael dos Santos Alves Pires</a>
+            <a href="#" class="nav__logo" data-i18n="frontEnd.nome">Rafael dos Santos Alves Pires</a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link active-link" data-i18n="frontEnd.header1">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link" data-i18n="frontEnd.header2">
                             <i class="uil uil-user nav__icon"></i> Sobre
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link" data-i18n="frontEnd.header3">
                             <i class="uil uil-file-alt nav__icon"></i> Habilidades
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
+                        <a href="#services" class="nav__link" data-i18n="frontEnd.header4">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Serviços
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link" data-i18n="frontEnd.header5">
                             <i class="uil uil-scenery nav__icon"></i> Portifolio
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
+                        <a href="#contact" class="nav__link" data-i18n="frontEnd.header6">
                             <i class="uil uil-message nav__icon"></i> Contato
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">
+                        <a href="#" class="nav__link change__language" data-i18n="frontEnd.header7">
                             <i class="uil uil-language nav__icon"></i> Language
                         </a>
                     </li>
@@ -84,7 +84,8 @@
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://www.linkedin.com/in/rafael-dos-santos-alves-pires-222a63324" target="_blank" class="home__social-icon">
+                        <a href="https://www.linkedin.com/in/rafael-dos-santos-alves-pires-222a63324" target="_blank"
+                            class="home__social-icon">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
 
@@ -116,12 +117,14 @@
                         </svg>
                     </div>
                     <div class="home__data">
-                        <h1 class="home__title">Oi, eu sou o Rafael</h1>
-                        <h3 class="home__subtitle">Desenvolvedor</h3>
-                        <p class="home__description">Sou desenvolvedor com experiência em sistemas web e mobile.
-                        Já trabalhei com Flutter, Node.js, PHP, PostgreSQL e integrações como Mercado Pago, RevenueCat e Stripe.
-                        Tenho familiaridade com Linux, Nginx, e deploys em nuvem como o Amazon EC2.</p>
-                        <a href="#contact" class="button button--flex">
+                        <h1 class="home__title" data-i18n="home.title">Oi, eu sou o Rafael</h1>
+                        <h3 class="home__subtitle" data-i18n="home.subtitle">Desenvolvedor</h3>
+                        <p class="home__description" data-i18n="home.description">Sou desenvolvedor com experiência em
+                            sistemas web e mobile.
+                            Já trabalhei com Flutter, Node.js, PHP, PostgreSQL e integrações como Mercado Pago,
+                            RevenueCat e Stripe.
+                            Tenho familiaridade com Linux, Nginx, e deploys em nuvem como o Amazon EC2.</p>
+                        <a href="#contact" class="button button--flex" data-i18n="contact">
                             Entre em Contato <i class="uil uil-message nav__icon button__icon"></i>
                         </a>
                     </div>
@@ -130,7 +133,7 @@
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-button button--flex">
                         <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                        <span class="home__scroll-name">Scroll Down</span>
+                        <span class="home__scroll-name" data-i18n="home.scroll">Scroll Down</span>
                         <i class="uil uil-arrow-down home__scroll-arrow"></i>
                     </a>
                 </div>
@@ -140,36 +143,39 @@
 
         <!--==================== ABOUT ====================-->
         <section class="about section" id="about">
-            <h2 class="section__title">Sobre mim</h2>
-            <span class="section__subtitle">Minha introdução</span>
+            <h2 class="section__title" data-i18n="about.title">Sobre mim</h2>
+            <span class="section__subtitle" data-i18n="about.subtitle">Minha introdução</span>
 
             <div class="about__container container grid">
                 <img src="assets/img/eu-3d.png" alt="" class="about__img">
 
                 <div class="about__data">
-                    <p class="about__description">
-                        Gosto de entender o que está por trás de cada coisa que programo — não só fazer funcionar, mas entender o porquê.
-                        Com o tempo, fui me envolvendo em projetos variados, desde apps mobile até sistemas completos com banco de dados, APIs e servidores Linux.
-                        Prefiro soluções simples e organizadas, e estou sempre buscando aprender algo novo por conta própria.
+                    <p class="about__description" data-i18n="about.description">
+                        Gosto de entender o que está por trás de cada coisa que programo — não só fazer funcionar, mas
+                        entender o porquê.
+                        Com o tempo, fui me envolvendo em projetos variados, desde apps mobile até sistemas completos
+                        com banco de dados, APIs e servidores Linux.
+                        Prefiro soluções simples e organizadas, e estou sempre buscando aprender algo novo por conta
+                        própria.
                     </p>
 
                     <div class="about__info">
                         <span class="about__info-title">2+</span>
-                        <span class="about__info-name">Anos de <br> Experiencia</span>
+                        <span class="about__info-name" data-i18n="about.info.name1">Anos de <br> Experiencia</span>
                     </div>
 
                     <div class="about__info">
                         <span class="about__info-title">20+</span>
-                        <span class="about__info-name">Projetos <br> Completos</span>
+                        <span class="about__info-name" data-i18n="about.info.name2">Projetos <br> Completos</span>
                     </div>
 
                     <div class="about__info">
                         <span class="about__info-title">01+</span>
-                        <span class="about__info-name">Empresas <br> que Trabalhei</span>
+                        <span class="about__info-name" data-i18n="about.info.name3">Empresas <br> que Trabalhei</span>
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="#" class="button button--flex">
+                        <a download="" href="#" class="button button--flex" data-i18n="about.download">
                             Baixar Curriculo <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -179,8 +185,9 @@
 
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Habilidades</h2>
-            <span class="section__subtitle">Minha habilidade técnica <br><br> 0%/40% = Básico <br> 41%/70% = Intermediario <br> 71%/100% = Avançado</span>
+            <h2 class="section__title" data-i18n="skill.section.title">Habilidades</h2>
+            <span class="section__subtitle" data-i18n="skill.section.subtitle">Minha habilidade técnica <br><br> 0%/40%
+                = Básico <br> 41%/70% = Intermediario <br> 71%/100% = Avançado</span>
 
             <div class="skills__container container grid">
                 <!--==================== SKILLS 1 ====================-->
@@ -189,8 +196,8 @@
                         <i class="uil uil-brackets-curly skills__icon"></i>
 
                         <div>
-                            <h1 class="skills__titles">Idiomas</h1>
-                            <span class="skills__subtitle">Mais de 7 anos</span>
+                            <h1 class="skills__titles" data-i18n="skill.title1">Idiomas</h1>
+                            <span class="skills__subtitle" data-i18n="skill.subtitle1">Mais de 7 anos</span>
                         </div>
 
                         <i class="uil uil-angle-down skills__arrow"></i>
@@ -199,7 +206,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Inglês</h3>
+                                    <h3 class="skills__name" data-i18n="skill.name1">Inglês</h3>
                                     <span class="skills__number">92%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -209,7 +216,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Japonês</h3>
+                                    <h3 class="skills__name" data-i18n="skill.name1.1">Japonês</h3>
                                     <span class="skills__number">65%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -219,7 +226,7 @@
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Português - Brasileiro</h3>
+                                    <h3 class="skills__name" data-i18n="skill.name1.2">Português - Brasileiro</h3>
                                     <span class="skills__number">80%</span>
                                 </div>
                                 <div class="skills__bar">
@@ -237,8 +244,8 @@
                             <i class="uil uil-server skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__titles">Desenvolvedor Backend</h1>
-                                <span class="skills__subtitle">Mais de 5 anos</span>
+                                <h1 class="skills__titles" data-i18n="skill.title2">Desenvolvedor Backend</h1>
+                                <span class="skills__subtitle" data-i18n="skill.subtitle2">Mais de 5 anos</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -247,7 +254,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">PHP</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name2">PHP</h3>
                                         <span class="skills__number">69%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -257,7 +264,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Node Js</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name2.1">Node Js</h3>
                                         <span class="skills__number">60%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -267,7 +274,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Python</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name2.2">Python</h3>
                                         <span class="skills__number">45%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -277,7 +284,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">ASP.NET</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name2.3">ASP.NET</h3>
                                         <span class="skills__number">40%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -296,8 +303,8 @@
                             <i class="uil uil-swatchbook skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__titles">Desenvolvedor Frontend</h1>
-                                <span class="skills__subtitle">Mais de 5 anos</span>
+                                <h1 class="skills__titles" data-i18n="skill.title3">Desenvolvedor Frontend</h1>
+                                <span class="skills__subtitle" data-i18n="skill.subtitle3">Mais de 5 anos</span>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -306,7 +313,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">JavaScript</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name3">JavaScript</h3>
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -316,7 +323,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">HTML</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name3.1">HTML</h3>
                                         <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -326,7 +333,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Css</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name3.2">Css</h3>
                                         <span class="skills__number">75%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -336,7 +343,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Flutter</h3>
+                                        <h3 class="skills__name" data-i18n="skill.name3.3">Flutter</h3>
                                         <span class="skills__number">55%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -352,17 +359,19 @@
 
         <!--==================== QUALIFICATION ====================-->
         <section class="qualification section">
-            <h2 class="section__title">Qualificações</h2>
-            <span class="section__subtitle">Minha jornada pessoal</span>
+            <h2 class="section__title" data-i18n="qualification.section.title">Qualificações</h2>
+            <span class="section__subtitle" data-i18n="qualification.section.subtitle">Minha jornada pessoal</span>
 
             <div class="qualification__container container">
                 <div class="qualification__tabs">
-                    <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <div class="qualification__button button--flex qualification__active" data-target="#education"
+                        data-i18n="qualification.button1">
                         <i class="uil uil-graduation-cap qualification__icon"></i>
                         Educação
                     </div>
 
-                    <div class="qualification__button button--flex" data-target="#work">
+                    <div class="qualification__button button--flex" data-target="#work"
+                        data-i18n="qualification.button2">
                         <i class="uil uil-briefcase-alt qualification__icon"></i>
                         Trabalho
                     </div>
@@ -377,8 +386,10 @@
 
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Gestão da Tecnologia da Informação</h3>
-                                <span class="qualification__subtitle">Fatec - Itaquaquecetuba - Universidade</span>
+                                <h3 class="qualification__title" data-i18n="qualification.title1">Gestão da Tecnologia
+                                    da Informação</h3>
+                                <span class="qualification__subtitle" data-i18n="qualification.subtitle1">Fatec -
+                                    Itaquaquecetuba - Universidade</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2021 - 2025
@@ -389,7 +400,7 @@
                                 <span class="qualification__line"></span>
                             </div>
                         </div>
-                        
+
                         <!--==================== QUALIFICATION 2 ====================-->
 
                         <div class="qualification__data">
@@ -401,8 +412,9 @@
                             </div>
 
                             <div>
-                                <h3 class="qualification__title">TOEIC</h3>
-                                <span class="qualification__subtitle">Fatec - Itaquaquecetuba - Universidade</span>
+                                <h3 class="qualification__title" data-i18n="qualification.title2">TOEIC</h3>
+                                <span class="qualification__subtitle" data-i18n="qualification.subtitle2">Fatec -
+                                    Itaquaquecetuba - Universidade</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2024
@@ -418,8 +430,10 @@
 
                         <div class="qualification__data">
                             <div>
-                                <h3 class="qualification__title">Engenheiro de Software</h3>
-                                <span class="qualification__subtitle">Éboli Tecnologia - Estagiario não remunerado <br> Frontend | Backend | Servidor</span>
+                                <h3 class="qualification__title" data-i18n="qualification.title3">Engenheiro de Software
+                                </h3>
+                                <span class="qualification__subtitle" data-i18n="qualification.subtitle3">Éboli
+                                    Tecnologia - Estagiario não remunerado <br> Frontend | Backend | Servidor</span>
                                 <div class="qualification__calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     2024 - 2025
@@ -435,10 +449,41 @@
             </div>
         </section>
 
+        <!-- ======================== LANGUAGE =============== -->
+
+        <div class="language__modal">
+            <div class="language__modal-content">
+                <h4 class="language__modal-title" data-i18n="language.title1">Selecionar Idioma</h4>
+                <i class="uil uil-times language__modal-close"></i>
+
+                <ul class="language__modal-services grid">
+
+                    <li>
+                        <button class="language__modal-service" onclick="changeLanguage('pt-br')">
+                            Português - Brasileiro
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="language__modal-service" onclick="changeLanguage('ja')">
+                            Japonês
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="language__modal-service" onclick="changeLanguage('en')">
+                            Inglês
+                        </button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
         <!--==================== SERVICES ====================-->
         <section class="services section" id="services">
-            <h2 class="section__title">Serviços</h2>
-            <span class="section__subtitle">O que eu ofereço</span>
+            <h2 class="section__title" data-i18n="services.section.title">Serviços</h2>
+            <span class="section__subtitle" data-i18n="services.section.subtitle">O que eu ofereço</span>
 
             <div class="services__container container grid">
                 <!--==================== SERVICES 1 ====================-->
@@ -446,45 +491,51 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
-                        <h3 class="services__title">Desenvolvedor <br> Frontend</h3>
+                        <h3 class="services__title" data-i18n="services.title1">Desenvolvedor <br> Frontend</h3>
                     </div>
 
-                    <span class="button button--flex button--small button--link services__button">
+                    <span class="button button--flex button--small button--link services__button"
+                        data-i18n="services.lermais">
                         Ler mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Desenvolvedor <br> Frontend</h4>
+                            <h4 class="services__modal-title" data-i18n="services.title1">Desenvolvedor <br> Frontend
+                            </h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Desenvolvo interfaces funcionais e visualmente agradáveis, sempre pensando na experiência do usuário.
+                                    <p data-i18n="services.detail1">
+                                        Desenvolvo interfaces funcionais e visualmente agradáveis, sempre pensando na
+                                        experiência do usuário.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Crio layouts responsivos e intuitivos usando Flutter para mobile, e HTML, CSS e JavaScript para web.
+                                    <p data-i18n="services.detail1.1">
+                                        Crio layouts responsivos e intuitivos usando Flutter para mobile, e HTML, CSS e
+                                        JavaScript para web.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Me preocupo com a organização do código e a fidelidade ao design, garantindo facilidade de manutenção.
+                                    <p data-i18n="services.detail1.2">
+                                        Me preocupo com a organização do código e a fidelidade ao design, garantindo
+                                        facilidade de manutenção.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Busco equilibrar estética e usabilidade, criando interfaces que sejam bonitas e práticas ao mesmo tempo.
+                                    <p data-i18n="services.detail1.3">
+                                        Busco equilibrar estética e usabilidade, criando interfaces que sejam bonitas e
+                                        práticas ao mesmo tempo.
                                     </p>
                                 </li>
                             </ul>
@@ -497,45 +548,51 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-arrow services__icon"></i>
-                        <h3 class="services__title">Desenvolvedor <br> Backend</h3>
+                        <h3 class="services__title" data-i18n="services.title2">Desenvolvedor <br> Backend</h3>
                     </div>
 
-                    <span class="button button--flex button--small button--link services__button">
+                    <span class="button button--flex button--small button--link services__button"
+                        data-i18n="services.lermais">
                         Ler mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Desenvolvedor <br> Backend</h4>
+                            <h4 class="services__modal-title" data-i18n="services.title2">Desenvolvedor <br> Backend
+                            </h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Tenho experiência com autenticação, segurança de dados e validação de informações em sistemas web e mobile.
+                                    <p data-i18n="services.detail2">
+                                        Tenho experiência com autenticação, segurança de dados e validação de
+                                        informações em sistemas web e mobile.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Trabalho com bancos de dados relacionais como PostgreSQL e MySQL, sempre focando em estrutura limpa e consultas eficientes.
+                                    <p data-i18n="services.detail2.1">
+                                        Trabalho com bancos de dados relacionais como PostgreSQL e MySQL, sempre focando
+                                        em estrutura limpa e consultas eficientes.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Integro APIs de terceiros como Mercado Pago, Stripe e RevenueCat, utilizando webhooks para garantir comunicação em tempo real.
+                                    <p data-i18n="services.detail2.2">
+                                        Integro APIs de terceiros como Mercado Pago, Stripe e RevenueCat, utilizando
+                                        webhooks para garantir comunicação em tempo real.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Estruturo o back-end pensando em escalabilidade e manutenção, com código limpo e bem dividido.
+                                    <p data-i18n="services.detail2.3">
+                                        Estruturo o back-end pensando em escalabilidade e manutenção, com código limpo e
+                                        bem dividido.
                                     </p>
                                 </li>
                             </ul>
@@ -548,52 +605,58 @@
                 <div class="services__content">
                     <div>
                         <i class="uil uil-pen services__icon"></i>
-                        <h3 class="services__title">Servidor <br> Linux</h3>
+                        <h3 class="services__title" data-i18n="services.title3">Servidor <br> Linux</h3>
                     </div>
 
-                    <span class="button button--flex button--small button--link services__button">
+                    <span class="button button--flex button--small button--link services__button"
+                        data-i18n="services.lermais">
                         Ler mais
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
                     <div class="services__modal">
                         <div class="services__modal-content">
-                            <h4 class="services__modal-title">Servidor <br> Linux</h4>
+                            <h4 class="services__modal-title" data-i18n="services.title3">Servidor <br> Linux</h4>
                             <i class="uil uil-times services__modal-close"></i>
 
                             <ul class="services__modal-services grid">
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Realizo a configuração de servidores Linux para hospedagem de aplicações web, com foco em estabilidade e segurança.
+                                    <p data-i18n="services.detail3">
+                                        Realizo a configuração de servidores Linux para hospedagem de aplicações web,
+                                        com foco em estabilidade e segurança.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Tenho experiência com servidores web como Nginx e Apache, além de configurar HTTPS com Certbot e Let's Encrypt.
+                                    <p data-i18n="services.detail3.1">
+                                        Tenho experiência com servidores web como Nginx e Apache, além de configurar
+                                        HTTPS com Certbot e Let's Encrypt.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Faço deploys em nuvem com Amazon EC2, incluindo gerenciamento de acesso, firewall e otimização do ambiente.
+                                    <p data-i18n="services.detail3.2">
+                                        Faço deploys em nuvem com Amazon EC2, incluindo gerenciamento de acesso,
+                                        firewall e otimização do ambiente.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Instalo e configuro sistemas como ERPs, CRMs, bancos de dados em ambiente Linux. Já tive experiencia com asterisk.
+                                    <p data-i18n="services.detail3.3">
+                                        Instalo e configuro sistemas como ERPs, CRMs, bancos de dados em ambiente Linux.
+                                        Já tive experiencia com asterisk.
                                     </p>
                                 </li>
 
                                 <li class="services__modal-service">
                                     <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>
-                                        Crio ambientes de teste com VirtualBox e VMs, facilitando desenvolvimento, backup e replicação de sistemas.
+                                    <p data-i18n="services.detail3.4">
+                                        Crio ambientes de teste com VirtualBox e VMs, facilitando desenvolvimento,
+                                        backup e replicação de sistemas.
                                     </p>
                                 </li>
                             </ul>
@@ -605,8 +668,8 @@
 
         <!--==================== PORTFOLIO ====================-->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Portifólio</h2>
-            <span class="section__subtitle">Projetos Recentes</span>
+            <h2 class="section__title" data-i18n="portfolio.section.title">Portifólio</h2>
+            <span class="section__subtitle" data-i18n="portfolio.section.subtitle">Projetos Recentes</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -616,9 +679,13 @@
                         <img src="assets/img/manga-website.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Honkai</h3>
-                            <p class="portfolio__description">Uma lojá de mangás online criado como meu tcc para a faculdade. <br> PHP | MySql | Webhook | Js | Css | API</p>
-                            <a href="https://www.youtube.com/watch?v=NyWJ-f_ht8A" target="_blank" class="button button--flex button--small portfolio__button">
+                            <h3 class="portfolio__title" data-i18n="portfolio.title1">Honkai</h3>
+                            <p class="portfolio__description" data-i18n="portfolio.description1">Uma lojá de mangás
+                                online criado como meu tcc para a faculdade. <br> PHP | MySql | Webhook | Js | Css | API
+                            </p>
+                            <a href="https://www.youtube.com/watch?v=NyWJ-f_ht8A" target="_blank"
+                                class="button button--flex button--small portfolio__button"
+                                data-i18n="portfolio.button1">
                                 Video
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -631,9 +698,12 @@
                         <img src="assets/img/asp.png" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">MyTask</h3>
-                            <p class="portfolio__description">Um bloco de notas online criado como AAP para a faculdade. <br> ASP.NET | HTML | Access | Css | API</p>
-                            <a href="https://www.youtube.com/watch?v=klJD9SUSXYg" target="_blank" class="button button--flex button--small portfolio__button">
+                            <h3 class="portfolio__title" data-i18n="portfolio.title2">MyTask</h3>
+                            <p class="portfolio__description" data-i18n="portfolio.description2">Um bloco de notas
+                                online criado como AAP para a faculdade. <br> ASP.NET | HTML | Access | Css | API</p>
+                            <a href="https://www.youtube.com/watch?v=klJD9SUSXYg" target="_blank"
+                                class="button button--flex button--small portfolio__button"
+                                data-i18n="portfolio.button2">
                                 Video
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
@@ -646,17 +716,21 @@
                         <img src="assets/img/talk.jpg" alt="" class="portfolio__img">
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Talkie-In</h3>
-                            <p class="portfolio__description">Projeto que ajudei no desenvolvimento durante estágio. <br> Flutter | Asterisk | Websocket | PostgreSql | API</p>
-                            <a download="" href="assets/pdf/manual de Instruções v1.2.pdf" class="button button--flex button--small portfolio__button">
+                            <h3 class="portfolio__title" data-i18n="portfolio.title3">Talkie-In</h3>
+                            <p class="portfolio__description" data-i18n="portfolio.description3">Projeto que ajudei no
+                                desenvolvimento durante estágio. <br> Flutter | Asterisk | Websocket | PostgreSql | API
+                            </p>
+                            <a download="" href="assets/pdf/manual de Instruções v1.2.pdf"
+                                class="button button--flex button--small portfolio__button"
+                                data-i18n="portfolio.button3">
                                 Baixar
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Add swiper arrows --> 
+
+                <!-- Add swiper arrows -->
                 <div class="swiper-button-next">
                     <i class="uil uil-arrow-right swiper-portfolio-icon"></i>
                 </div>
@@ -674,13 +748,15 @@
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
-                        <h2 class="project__title">Projetos Futuros</h2>
-                        <p class="project__description">
-                             Estou sempre aberto a novos projetos e colaborações. Se você tem uma ideia ou um projeto em mente,
-                             não hesite em entrar em contato comigo. Vamos trabalhar juntos para dar vida à sua visão!
+                        <h2 class="project__title" data-i18n="future.title">Projetos Futuros</h2>
+                        <p class="project__description" data-i18n="future.description">
+                            Estou sempre aberto a novos projetos e colaborações. Se você tem uma ideia ou um projeto em
+                            mente,
+                            não hesite em entrar em contato comigo. Vamos trabalhar juntos para dar vida à sua visão!
                         </p>
 
-                        <a href="#contact" class="button button__contact button--flex button--white">
+                        <a href="#contact" class="button button__contact button--flex button--white"
+                            data-i18n="future.button">
                             Contate-me
                             <i class="uil uil-message project__icon button__icon"></i>
                         </a>
@@ -693,38 +769,38 @@
 
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contato</h2>
-            <span class="section__subtitle">Entre em Contato</span>
+            <h2 class="section__title" data-i18n="contact.section.title">Contato</h2>
+            <span class="section__subtitle" data-i18n="contact.section.subtitle">Entre em Contato</span>
 
             <div class="contact__container container grid">
-                
-                    <div class="contact__information">
-                        <i class="uil uil-phone contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">Celular</h3>
-                            <span class="contact__subtitle">(+55)11 95419-5131</span>
-                        </div>
+                <div class="contact__information">
+                    <i class="uil uil-phone contact__icon"></i>
+
+                    <div>
+                        <h3 class="contact__title" data-i18n="contact.title1">Celular</h3>
+                        <span class="contact__subtitle">(+55)11 95419-5131</span>
                     </div>
+                </div>
 
-                    <div class="contact__information">
-                        <i class="uil uil-envelope contact__icon"></i>
+                <div class="contact__information">
+                    <i class="uil uil-envelope contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">rafael.alves0_1@hotmail.com</span>
-                        </div>
+                    <div>
+                        <h3 class="contact__title" data-i18n="contact.title2">Email</h3>
+                        <span class="contact__subtitle">rafael.alves0_1@hotmail.com</span>
                     </div>
+                </div>
 
-                    <div class="contact__information">
-                        <i class="uil uil-map-marker contact__icon"></i>
+                <div class="contact__information">
+                    <i class="uil uil-map-marker contact__icon"></i>
 
-                        <div>
-                            <h3 class="contact__title">Localização</h3>
-                            <span class="contact__subtitle">Brazil</span>
-                        </div>
+                    <div>
+                        <h3 class="contact__title" data-i18n="contact.title3">Localização</h3>
+                        <span class="contact__subtitle" data-i18n="contact.subtitle3">Brazil</span>
                     </div>
-                
+                </div>
+
 
                 <!-- <form action="" class="contact__form grid">
                     <div class="contact__inputs grid">
@@ -765,21 +841,21 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div>
-                    <h1 class="footer__title">Rafael</h1>
-                    <span class="footer__subtitle">Desenvolvedor</span>
+                    <h1 class="footer__title" data-i18n="footer.title">Rafael</h1>
+                    <span class="footer__subtitle" data-i18n="footer.subtitle">Desenvolvedor</span>
                 </div>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#services" class="footer__link">Serviços</a>
+                        <a href="#services" class="footer__link" data-i18n="footer.link1">Serviços</a>
                     </li>
 
                     <li>
-                        <a href="#portfolio" class="footer__link">Portifólio</a>
+                        <a href="#portfolio" class="footer__link" data-i18n="footer.link2">Portifólio</a>
                     </li>
 
                     <li>
-                        <a href="#contact" class="footer__link">Contato</a>
+                        <a href="#contact" class="footer__link" data-i18n="footer.link3">Contato</a>
                     </li>
                 </ul>
 
@@ -800,8 +876,9 @@
                 </div>
             </div>
 
-            <p class="footer__copy">&#169; 
-                Source code: <a href="https://github.com/bedimcode/responsive-portfolio-website-Alexa" class="footer__link" target="_blank"> bedimcode</a>
+            <p class="footer__copy" data-i18n="footer.source">&#169;
+                Source code: <a href="https://github.com/bedimcode/responsive-portfolio-website-Alexa"
+                    class="footer__link" target="_blank"> bedimcode</a>
             </p>
         </div>
     </footer>
