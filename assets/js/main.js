@@ -286,6 +286,9 @@ const translations = {
       'portfolio.title3': "Talkie-In",
       'portfolio.description3': "Project I helped develop during an internship. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
       'portfolio.button3': "Download",
+      'portfolio.title4': "Fatecanos for a day",
+      'portfolio.description4': "This project was developed at the request of a university professor. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
+      'portfolio.button4': "GitHub",
       'future.title': "Future Projects",
       'future.description': "I'm always open to new ideas and collaborations. If you have a project in mind, let’s build it together!",
       'future.button': "Contact Me",
@@ -300,7 +303,7 @@ const translations = {
       'footer.link1': "Services",
       'footer.link2': "Portfolio",
       'footer.link3': "Contact",
-      'footer.source': "© Source code:"
+      'footer.source': "Source code:"
     },
     // portuguese - brazilian
     'pt-br': {
@@ -383,6 +386,9 @@ const translations = {
     'portfolio.title3': "Talkie-In",
     'portfolio.description3': "Projeto que ajudei no desenvolvimento durante estágio. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
     'portfolio.button3': "Baixar",
+    'portfolio.title4': "Fatecanos por um dia",
+    'portfolio.description4': "Projeto desenvolvido pelo pedido de um professor da Fatec de Itaquaquecetuba. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
+    'portfolio.button4': "GitHub",
     'future.title': "Projetos Futuros",
     'future.description': "Estou sempre aberto a novos projetos e colaborações. Se você tem uma ideia ou um projeto em mente, não hesite em entrar em contato comigo. Vamos trabalhar juntos para dar vida à sua visão!",
     'future.button': "Contate-me",
@@ -398,7 +404,7 @@ const translations = {
     'footer.link1': "Serviços",
     'footer.link2': "Portifólio",
     'footer.link3': "Contato",
-    'footer.source': "© Código fonte:"
+    'footer.source': "Código fonte:"
   },
   // japanese language
   'ja': {
@@ -481,6 +487,9 @@ const translations = {
     'portfolio.title3': "Talkie-In",
     'portfolio.description3': "インターン中に開発に関わったプロジェクト。<br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
     'portfolio.button3': "ダウンロード",
+    'portfolio.title4': "大学生の日常",
+    'portfolio.description4': "このプロジェクトは、ある教授からの依頼で開発しました。 <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
+    'portfolio.button4': "GitHub",
     'future.title': "将来のプロジェクト",
     'future.description': "新しいアイデアやコラボを常に歓迎しています。あなたのビジョンを一緒に形にしましょう！",
     'future.button': "お問い合わせ",
@@ -496,7 +505,7 @@ const translations = {
     'footer.link1': "サービス",
     'footer.link2': "ポートフォリオ",
     'footer.link3': "連絡先",
-    'footer.source': "© ソースコード:"
+    'footer.source': "ソースコード:"
   }
   };
 
