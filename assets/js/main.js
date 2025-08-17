@@ -303,7 +303,11 @@ const translations = {
       'footer.link1': "Services",
       'footer.link2': "Portfolio",
       'footer.link3': "Contact",
-      'footer.source': "Source code:"
+      'language.title1': "Select Language",
+      'footer.source': "Source code:",
+      'language__pt-br': "Portuguese - Brazilian",
+      'language__ja': "Japanese",
+      'language__en': "English"
     },
     // portuguese - brazilian
     'pt-br': {
@@ -404,7 +408,11 @@ const translations = {
     'footer.link1': "Serviços",
     'footer.link2': "Portifólio",
     'footer.link3': "Contato",
-    'footer.source': "Código fonte:"
+    'footer.source': "Código fonte:",
+    'language.title1': "Selecionar Idioma",
+    'language__pt-br': "Português - Brasileiro",
+    'language__ja': "Japonês",
+    'language__en': "Inglês"
   },
   // japanese language
   'ja': {
@@ -505,7 +513,11 @@ const translations = {
     'footer.link1': "サービス",
     'footer.link2': "ポートフォリオ",
     'footer.link3': "連絡先",
-    'footer.source': "ソースコード:"
+    'language.title1': "言語を選択",
+    'footer.source': "ソースコード:",
+    'language__pt-br': "ポルトガル語 - ブラジル",
+    'language__ja': "日本語",
+    'language__en': "英語"
   }
   };
 
