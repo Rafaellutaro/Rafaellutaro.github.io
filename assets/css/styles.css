@@ -521,6 +521,13 @@ img {
   background-color: var(--first-color-lighter);
 }
 
+hr{
+  border: none;
+  height: 5px;
+  background-color: var(--first-color);
+  margin-bottom: var(--mb-1-5);
+}
+
 .skills__percentage{
   display: block;
   background-color: var(--first-color);

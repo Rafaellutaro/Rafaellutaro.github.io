@@ -175,7 +175,7 @@
                     </div>
 
                     <div class="about__buttons">
-                        <a download="" href="./assets/pdf/curriculo.pdf" class="button button--flex">
+                        <a id="downloadLink" download="" href="./assets/pdf/curriculo.pdf" class="button button--flex">
                             <span data-i18n="about.download">Baixar Curriculo</span> <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
@@ -186,8 +186,7 @@
         <!--==================== SKILLS ====================-->
         <section class="skills section" id="skills">
             <h2 class="section__title" data-i18n="skill.section.title">Habilidades</h2>
-            <span class="section__subtitle" data-i18n="skill.section.subtitle">Minha habilidade técnica <br><br> 0%/40%
-                = Básico <br> 41%/70% = Intermediario <br> 71%/100% = Avançado</span>
+            <span class="section__subtitle" data-i18n="skill.section.subtitle">Minha habilidade técnica</span>
 
             <div class="skills__container container grid">
                 <!--==================== SKILLS 1 ====================-->
@@ -207,31 +206,34 @@
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name" data-i18n="skill.name1">Inglês</h3>
-                                    <span class="skills__number">92%</span>
+                                    <span class="skills__number" data-i18n="en.level">Fluente</span>
                                 </div>
-                                <div class="skills__bar">
+                                <hr>
+                                <!-- <div class="skills__bar">
                                     <span class="skills__percentage skills__ingles"> </span>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name" data-i18n="skill.name1.1">Japonês</h3>
-                                    <span class="skills__number">65%</span>
+                                    <span class="skills__number" data-i18n="ja.level">Intermediario</span>
                                 </div>
-                                <div class="skills__bar">
+                                <hr>
+                                <!-- <div class="skills__bar">
                                     <span class="skills__percentage skills__japan"> </span>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
                                     <h3 class="skills__name" data-i18n="skill.name1.2">Português - Brasileiro</h3>
-                                    <span class="skills__number">80%</span>
+                                    <span class="skills__number" data-i18n="pt-br.level">Nativo</span>
                                 </div>
-                                <div class="skills__bar">
+                                <hr>
+                                <!-- <div class="skills__bar">
                                     <span class="skills__percentage skills__pt-br"> </span>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -255,41 +257,56 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name2">PHP</h3>
-                                        <span class="skills__number">69%</span>
+                                        <span class="skills__number" data-i18n="php.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__php"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name2.1">Node Js</h3>
-                                        <span class="skills__number">60%</span>
+                                        <span class="skills__number" data-i18n="node.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__node"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name2.2">Python</h3>
-                                        <span class="skills__number">45%</span>
+                                        <span class="skills__number" data-i18n="python.level">Basico</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__python"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name2.3">ASP.NET</h3>
-                                        <span class="skills__number">40%</span>
+                                        <span class="skills__number" data-i18n="asp_net.level">basico</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__asp"> </span>
+                                    </div> -->
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name" data-i18n="skill.name2.4">TypeScript</h3>
+                                        <span class="skills__number"  data-i18n="ts.level">Basico</span>
                                     </div>
+                                    <hr>
+                                    <!-- <div class="skills__bar">
+                                        <span class="skills__percentage skills__flutter"> </span>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -314,41 +331,53 @@
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name3">JavaScript</h3>
-                                        <span class="skills__number">70%</span>
+                                        <span class="skills__number" data-i18n="js.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__js"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name3.1">HTML</h3>
-                                        <span class="skills__number">75%</span>
+                                        <span class="skills__number" data-i18n="html.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__html"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name3.2">Css</h3>
-                                        <span class="skills__number">75%</span>
+                                        <span class="skills__number" data-i18n="css.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__css"> </span>
-                                    </div>
+                                    </div> -->
                                 </div>
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
                                         <h3 class="skills__name" data-i18n="skill.name3.3">Flutter</h3>
-                                        <span class="skills__number">55%</span>
+                                        <span class="skills__number"  data-i18n="flutter.level">Intermediario</span>
                                     </div>
-                                    <div class="skills__bar">
+                                    <hr>
+                                    <!-- <div class="skills__bar">
                                         <span class="skills__percentage skills__flutter"> </span>
+                                    </div> -->
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name" data-i18n="skill.name3.4">React</h3>
+                                        <span class="skills__number"  data-i18n="react.level">Basico</span>
                                     </div>
+                                    <hr>
                                 </div>
                             </div>
                         </div>

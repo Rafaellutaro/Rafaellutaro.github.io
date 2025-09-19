@@ -1,177 +1,177 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
-if(navToggle) {
-    navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu');
-    });
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu');
+  });
 }
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
-if(navClose) {
-    navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu');
-    });
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+  });
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
 
 const navLink = document.querySelectorAll('.nav__link')
 
-function linkAction(){
-    const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show-menu')
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu')
+  // When we click on each nav__link, we remove the show-menu class
+  navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillContent = document.getElementsByClassName('skills__content'),
-      skillHeader = document.querySelectorAll('.skills__header');
+  skillHeader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
-    let itemClass = this.parentNode.className;
+  let itemClass = this.parentNode.className;
 
-    for (i = 0; i < skillContent.length; i++) {
-        skillContent[i].className = 'skills__content skills__close';
-    }
+  for (i = 0; i < skillContent.length; i++) {
+    skillContent[i].className = 'skills__content skills__close';
+  }
 
-    if (itemClass === 'skills__content skills__close') {
-        this.parentNode.className = 'skills__content skills__open';
-    }
+  if (itemClass === 'skills__content skills__close') {
+    this.parentNode.className = 'skills__content skills__open';
+  }
 }
 
 skillHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills);
+  el.addEventListener('click', toggleSkills);
 })
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]');
+  tabContents = document.querySelectorAll('[data-content]');
 
 tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-        const target = document.querySelector(tab.dataset.target);
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.target);
 
-        tabContents.forEach(tabContent => {
-            tabContent.classList.remove('qualification__active');
-        })
-
-        target.classList.add('qualification__active');
-
-        tabs.forEach(tab => {
-            tab.classList.remove('qualification__active');
-        })
-        tab.classList.add('qualification__active');
-
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('qualification__active');
     })
+
+    target.classList.add('qualification__active');
+
+    tabs.forEach(tab => {
+      tab.classList.remove('qualification__active');
+    })
+    tab.classList.add('qualification__active');
+
+  })
 })
 
 /*==================== SERVICES MODAL ====================*/
 
 const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('.services__button'),
-      modalCloses = document.querySelectorAll('.services__modal-close');
+  modalBtns = document.querySelectorAll('.services__button'),
+  modalCloses = document.querySelectorAll('.services__modal-close');
 
-let modal = function(modalClick) {
-    modalViews[modalClick].classList.add('active-modal');
+let modal = function (modalClick) {
+  modalViews[modalClick].classList.add('active-modal');
 }
 
 modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(i);
-    })
+  modalBtn.addEventListener('click', () => {
+    modal(i);
+  })
 })
 
 modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal');
-        })
+  modalClose.addEventListener('click', () => {
+    modalViews.forEach((modalView) => {
+      modalView.classList.remove('active-modal');
     })
+  })
 })
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 
 let swiperPortfolio = new Swiper(".portfolio__container", {
-      cssMode: true,
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 /*==================== TESTIMONIAL ====================*/
 
 let swiperTestimonial = new Swiper(".testimonial__container", {
-      loop: true,
-      grabcursor: true,
-      spacebetween: 48,
+  loop: true,
+  grabcursor: true,
+  spacebetween: 48,
 
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-      },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-      breakpoints: {
-        568: {
-          slidesPerView: 2,
-        },
-      },
-    });
+  breakpoints: {
+    568: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive(){
-    const scrollY = window.pageYOffset
+function scrollActive() {
+  const scrollY = window.pageYOffset
 
-    sections.forEach(current =>{
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
+  sections.forEach(current => {
+    const sectionHeight = current.offsetHeight
+    const sectionTop = current.offsetTop - 50;
+    sectionId = current.getAttribute('id')
 
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+    } else {
+      document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+    }
+  })
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*==================== CHANGE BACKGROUND HEADER ====================*/
 
-function scrollHeader(){
-    const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
+function scrollHeader() {
+  const nav = document.getElementById('header')
+  // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*==================== SHOW SCROLL UP ====================*/
 
-function scrollUp(){
-    const scrollUp = document.getElementById('scroll-up');
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+function scrollUp() {
+  const scrollUp = document.getElementById('scroll-up');
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 560) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
@@ -194,123 +194,136 @@ if (selectedTheme) {
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme)
+  themeButton.classList.toggle(iconTheme)
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
 // ========================== TRANSLATIONS =======================
 
 const translations = {
-    'en': {
-      'titulo': "Rafael's Portfolio",
-      'frontEnd.nome': "Rafael dos Santos Alves Pires",
-      'frontEnd.header1': "Home",
-      'frontEnd.header2': "About",
-      'frontEnd.header3': "Skills",
-      'frontEnd.header4': "Services",
-      'frontEnd.header5': "Portfolio",
-      'frontEnd.header6': "Contact",
-      'frontEnd.header7': "Language",
-      'contact' : "contact-me",
-      'home.title': "Hi, I'm Rafael",
-      'home.subtitle': "Developer",
-      'home.description': "I'm a developer with experience in web and mobile systems. I've worked with Flutter, Node.js, PHP, PostgreSQL, and integrations like Mercado Pago, RevenueCat, and Stripe. I'm also familiar with Linux, Nginx, and cloud deployments like Amazon EC2.",
-      'home.scroll': "Scroll Down",
-      'about.title': "About Me",
-      'about.subtitle': "Introduction",
-      'about.description': "I like understanding what’s behind every piece of code — not just making things work, but knowing why. Over time, I’ve worked on all kinds of projects, from mobile apps to full systems with databases, APIs, and Linux servers. I prefer clean and simple solutions and love learning new things on my own.",
-      'about.info.name1': "Years of <br> Experience",
-      'about.info.name2': "Completed <br> Projects",
-      'about.info.name3': "Companies <br> Worked At",
-      'about.download': "Download CV",
-      'skill.section.title': "Skills",
-      'skill.section.subtitle': "My technical level <br><br> 0%/40% = Basic <br> 41%/70% = Intermediate <br> 71%/100% = Advanced",
-      'skill.title1': "Languages",
-      'skill.subtitle1': "Over 7 years",
-      'skill.name1': "English",
-      'skill.name1.1': "Japanese",
-      'skill.name1.2': "Portuguese - Brazil",
-      'skill.title2': "Backend Developer",
-      'skill.subtitle2': "Over 5 years",
-      'skill.name2': "PHP",
-      'skill.name2.1': "Node.js",
-      'skill.name2.2': "Python",
-      'skill.name2.3': "ASP.NET",
-      'skill.title3': "Frontend Developer",
-      'skill.subtitle3': "Over 5 years",
-      'skill.name3': "JavaScript",
-      'skill.name3.1': "HTML",
-      'skill.name3.2': "CSS",
-      'skill.name3.3': "Flutter",
-      'qualification.section.title': "Qualifications",
-      'qualification.section.subtitle': "My personal journey",
-      'qualification.button1': "Education",
-      'qualification.button2': "Work",
-      'qualification.title1': "Information Technology Management",
-      'qualification.subtitle1': "Fatec - Itaquaquecetuba - University",
-      'qualification.title2': "TOEIC",
-      'qualification.subtitle2': "Fatec - Itaquaquecetuba - University",
-      'qualification.title3': "Software Engineer",
-      'qualification.subtitle3': "Éboli Tecnologia - Unpaid Intern <br> Frontend | Backend | Server",
-      'services.section.title': "Services",
-      'services.section.subtitle': "What I Offer",
-      'services.title1': "Frontend <br> Developer",
-      'services.title2': "Backend <br> Developer",
-      'services.title3': "Linux <br> Server",
-      'services.lermais': "Read More",
-      'services.detail1': "I develop functional and visually appealing interfaces with user experience in mind.",
-      'services.detail1.1': "I create responsive and intuitive layouts using Flutter for mobile, and HTML, CSS and JavaScript for the web.",
-      'services.detail1.2': "I care about code organization and fidelity to the design, ensuring easy maintenance.",
-      'services.detail1.3': "I balance aesthetics and usability to create clean and practical interfaces.",
-      'services.detail2': "I have experience with authentication, data security, and validation in web and mobile systems.",
-      'services.detail2.1': "I work with relational databases like PostgreSQL and MySQL, focusing on clean structure and efficient queries.",
-      'services.detail2.2': "I integrate third-party APIs like Mercado Pago, Stripe, and RevenueCat, using webhooks for real-time communication.",
-      'services.detail2.3': "I design scalable and maintainable back-end systems with clean, modular code.",
-      'services.detail3': "I configure Linux servers to host web applications, with a focus on stability and security.",
-      'services.detail3.1': "I work with web servers like Nginx and Apache, including HTTPS setup with Certbot and Let’s Encrypt.",
-      'services.detail3.2': "I deploy on Amazon EC2, including firewall setup, access control and performance optimization.",
-      'services.detail3.3': "I install and configure ERPs, CRMs, and databases on Linux. I’ve also worked with Asterisk.",
-      'services.detail3.4': "I create test environments using VirtualBox and VMs to support development, backup and replication.",
-      'portfolio.section.title': "Portfolio",
-      'portfolio.section.subtitle': "Recent Projects",
-      'portfolio.title1': "Honkai",
-      'portfolio.description1': "An online manga store created as my college thesis. <br> PHP | Html | MySQL | Webhook | JS | CSS | API",
-      'portfolio.button1': "Video",
-      'portfolio.title2': "MyTask",
-      'portfolio.description2': "An online notepad created as a college assignment. <br> ASP.NET | HTML | Access | CSS | API",
-      'portfolio.button2': "Video",
-      'portfolio.title3': "Talkie-In",
-      'portfolio.description3': "Project I helped develop during an internship. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
-      'portfolio.button3': "Download",
-      'portfolio.title4': "Fatecanos for a day",
-      'portfolio.description4': "This project was developed at the request of a university professor. <br> Html | Css | NodeJs | access | API",
-      'portfolio.button4': "GitHub",
-      'future.title': "Future Projects",
-      'future.description': "I'm always open to new ideas and collaborations. If you have a project in mind, let’s build it together!",
-      'future.button': "Contact Me",
-      'contact.section.title': "Contact",
-      'contact.section.subtitle': "Get in Touch",
-      'contact.title1': "Phone",
-      'contact.title2': "Email",
-      'contact.title3': "Location",
-      'contact.subtitle3': "Brazil",
-      'footer.title': "Rafael",
-      'footer.subtitle': "Developer",
-      'footer.link1': "Services",
-      'footer.link2': "Portfolio",
-      'footer.link3': "Contact",
-      'language.title1': "Select Language",
-      'footer.source': "Source code:",
-      'language__pt-br': "Portuguese - Brazilian",
-      'language__ja': "Japanese",
-      'language__en': "English"
-    },
-    // portuguese - brazilian
-    'pt-br': {
+  'en': {
+    'titulo': "Rafael's Portfolio",
+    'frontEnd.nome': "Rafael dos Santos Alves Pires",
+    'frontEnd.header1': "Home",
+    'frontEnd.header2': "About",
+    'frontEnd.header3': "Skills",
+    'frontEnd.header4': "Services",
+    'frontEnd.header5': "Portfolio",
+    'frontEnd.header6': "Contact",
+    'frontEnd.header7': "Language",
+    'contact': "contact-me",
+    'home.title': "Hi, I'm Rafael",
+    'home.subtitle': "Developer",
+    'home.description': "I'm a developer with experience in web and mobile systems. I've worked with Flutter, Node.js, PHP, PostgreSQL, and integrations like Mercado Pago, RevenueCat, and Stripe. I'm also familiar with Linux, Nginx, and cloud deployments like Amazon EC2.",
+    'home.scroll': "Scroll Down",
+    'about.title': "About Me",
+    'about.subtitle': "Introduction",
+    'about.description': "I like understanding what’s behind every piece of code — not just making things work, but knowing why. Over time, I’ve worked on all kinds of projects, from mobile apps to full systems with databases, APIs, and Linux servers. I prefer clean and simple solutions and love learning new things on my own.",
+    'about.info.name1': "Years of <br> Experience",
+    'about.info.name2': "Completed <br> Projects",
+    'about.info.name3': "Companies <br> Worked At",
+    'about.download': "Download CV",
+    'skill.section.title': "Skills",
+    'skill.section.subtitle': "My technical levels",
+    'skill.title1': "Languages",
+    'skill.subtitle1': "Over 7 years",
+    'skill.name1': "English",
+    'skill.name1.1': "Japanese",
+    'skill.name1.2': "Portuguese - Brazil",
+    'skill.title2': "Backend Developer",
+    'skill.subtitle2': "Over 5 years",
+    'skill.name2': "PHP",
+    'skill.name2.1': "Node.js",
+    'skill.name2.2': "Python",
+    'skill.name2.3': "ASP.NET",
+    'skill.title3': "Frontend Developer",
+    'skill.subtitle3': "Over 5 years",
+    'skill.name3': "JavaScript",
+    'skill.name3.1': "HTML",
+    'skill.name3.2': "CSS",
+    'skill.name3.3': "Flutter",
+    'qualification.section.title': "Qualifications",
+    'qualification.section.subtitle': "My personal journey",
+    'qualification.button1': "Education",
+    'qualification.button2': "Work",
+    'qualification.title1': "Information Technology Management",
+    'qualification.subtitle1': "Fatec - Itaquaquecetuba - University",
+    'qualification.title2': "TOEIC",
+    'qualification.subtitle2': "Fatec - Itaquaquecetuba - University",
+    'qualification.title3': "Software Engineer",
+    'qualification.subtitle3': "Éboli Tecnologia - Unpaid Intern <br> Frontend | Backend | Server",
+    'services.section.title': "Services",
+    'services.section.subtitle': "What I Offer",
+    'services.title1': "Frontend <br> Developer",
+    'services.title2': "Backend <br> Developer",
+    'services.title3': "Linux <br> Server",
+    'services.lermais': "Read More",
+    'services.detail1': "I develop functional and visually appealing interfaces with user experience in mind.",
+    'services.detail1.1': "I create responsive and intuitive layouts using Flutter for mobile, and HTML, CSS and JavaScript for the web.",
+    'services.detail1.2': "I care about code organization and fidelity to the design, ensuring easy maintenance.",
+    'services.detail1.3': "I balance aesthetics and usability to create clean and practical interfaces.",
+    'services.detail2': "I have experience with authentication, data security, and validation in web and mobile systems.",
+    'services.detail2.1': "I work with relational databases like PostgreSQL and MySQL, focusing on clean structure and efficient queries.",
+    'services.detail2.2': "I integrate third-party APIs like Mercado Pago, Stripe, and RevenueCat, using webhooks for real-time communication.",
+    'services.detail2.3': "I design scalable and maintainable back-end systems with clean, modular code.",
+    'services.detail3': "I configure Linux servers to host web applications, with a focus on stability and security.",
+    'services.detail3.1': "I work with web servers like Nginx and Apache, including HTTPS setup with Certbot and Let’s Encrypt.",
+    'services.detail3.2': "I deploy on Amazon EC2, including firewall setup, access control and performance optimization.",
+    'services.detail3.3': "I install and configure ERPs, CRMs, and databases on Linux. I’ve also worked with Asterisk.",
+    'services.detail3.4': "I create test environments using VirtualBox and VMs to support development, backup and replication.",
+    'portfolio.section.title': "Portfolio",
+    'portfolio.section.subtitle': "Recent Projects",
+    'portfolio.title1': "Honkai",
+    'portfolio.description1': "An online manga store created as my college thesis. <br> PHP | Html | MySQL | Webhook | JS | CSS | API",
+    'portfolio.button1': "Video",
+    'portfolio.title2': "MyTask",
+    'portfolio.description2': "An online notepad created as a college assignment. <br> ASP.NET | HTML | Access | CSS | API",
+    'portfolio.button2': "Video",
+    'portfolio.title3': "Talkie-In",
+    'portfolio.description3': "Project I helped develop during an internship. <br> Flutter | Asterisk | WebSocket | PostgreSQL | API",
+    'portfolio.button3': "Download",
+    'portfolio.title4': "Fatecanos for a day",
+    'portfolio.description4': "This project was developed at the request of a university professor. <br> Html | Css | NodeJs | access | API",
+    'portfolio.button4': "GitHub",
+    'future.title': "Future Projects",
+    'future.description': "I'm always open to new ideas and collaborations. If you have a project in mind, let’s build it together!",
+    'future.button': "Contact Me",
+    'contact.section.title': "Contact",
+    'contact.section.subtitle': "Get in Touch",
+    'contact.title1': "Phone",
+    'contact.title2': "Email",
+    'contact.title3': "Location",
+    'contact.subtitle3': "Brazil",
+    'footer.title': "Rafael",
+    'footer.subtitle': "Developer",
+    'footer.link1': "Services",
+    'footer.link2': "Portfolio",
+    'footer.link3': "Contact",
+    'language.title1': "Select Language",
+    'footer.source': "Source code:",
+    'language__pt-br': "Portuguese - Brazilian",
+    'language__ja': "Japanese",
+    'language__en': "English",
+    'en.level': "Fluent",
+    'ja.level': "Intermediate",
+    'pt-br.level': "Native",
+    'php.level': "Intermediate",
+    'node.level': "Intermediate",
+    'python.level': "Basic",
+    'asp_net.level': "Basic",
+    'ts.level': "Basic",
+    'react.level': "Basic",
+    'js.level': "intermediate",
+    'html.level': "intermediate",
+    'css.level': "intermediate",
+    'flutter.level': "advanced"
+  },
+  // portuguese - brazilian
+  'pt-br': {
     'titulo': "Portifólio do Rafael",
     'frontEnd.nome': "Rafael dos Santos Alves Pires",
     'frontEnd.header1': "Home",
@@ -332,7 +345,7 @@ const translations = {
     'about.info.name3': "Empresas <br> que Trabalhei",
     'about.download': "Baixar Currículo",
     'skill.section.title': "Habilidades",
-    'skill.section.subtitle': "Minha habilidade técnica <br><br> 0%/40% = Básico <br> 41%/70% = Intermediário <br> 71%/100% = Avançado",
+    'skill.section.subtitle': "Minhas habilidades técnicas",
     'skill.title1': "Idiomas",
     'skill.subtitle1': "Mais de 7 anos",
     'skill.name1': "Inglês",
@@ -412,7 +425,20 @@ const translations = {
     'language.title1': "Selecionar Idioma",
     'language__pt-br': "Português - Brasileiro",
     'language__ja': "Japonês",
-    'language__en': "Inglês"
+    'language__en': "Inglês",
+    'en.level': "Fluente",
+    'ja.level': "Intermediário",
+    'pt-br.level': "Nativo",
+    'php.level': "Intermediário",
+    'node.level': "Intermediário",
+    'python.level': "Básico",
+    'asp_net.level': "Básico",
+    'ts.level': "Básico",
+    'react.level': "Básico",
+    'js.level': "Intermediário",
+    'html.level': "Intermediário",
+    'css.level': "Intermediário",
+    'flutter.level': "Avançado"
   },
   // japanese language
   'ja': {
@@ -437,7 +463,7 @@ const translations = {
     'about.info.name3': "勤務した <br> 企業",
     'about.download': "履歴書をダウンロード",
     'skill.section.title': "スキル",
-    'skill.section.subtitle': "技術レベル <br><br> 0%/40% = 基本 <br> 41%/70% = 中級 <br> 71%/100% = 上級",
+    'skill.section.subtitle': "技術レベル",
     'skill.title1': "言語",
     'skill.subtitle1': "7年以上",
     'skill.name1': "英語",
@@ -517,58 +543,95 @@ const translations = {
     'footer.source': "ソースコード:",
     'language__pt-br': "ポルトガル語 - ブラジル",
     'language__ja': "日本語",
-    'language__en': "英語"
+    'language__en': "英語",
+    'en.level': "流暢",
+    'ja.level': "中級",
+    'pt-br.level': "ネイティブ",
+    'php.level': "中級",
+    'node.level': "中級",
+    'python.level': "基礎",
+    'asp_net.level': "基礎",
+    'ts.level': "基礎",
+    'react.level': "基礎",
+    'js.level': "中級",
+    'html.level': "中級",
+    'css.level': "中級",
+    'flutter.level': "上級"
   }
-  };
+};
 
-  function changeLanguage(lang) {
-    localStorage.setItem('siteLanguage', lang);
+function changeLanguage(lang) {
+  localStorage.setItem('siteLanguage', lang);
 
-    const elements = document.querySelectorAll('[data-i18n]');
-    elements.forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const translation = translations[lang]?.[key];
-      if (translation) {
-        el.innerHTML = translation;
-      }
-    });
-
-    document.body.style.visibility = 'visible';
-
-    const nav = document.querySelector(".nav");
-    const navMenu = document.querySelector(".nav__menu");
-    const footer = document.querySelector(".footer__container");
-
-    if (lang == "ja"){
-        nav.classList.add("nav__japanese");
-        navMenu.classList.add("nav__menu-japanese");
-        footer.classList.add("footer__japanese");
-    } else{
-        nav.classList.remove("nav__japanese");
-        navMenu.classList.remove("nav__menu-japanese");
-        footer.classList.remove("footer__japanese");
+  const elements = document.querySelectorAll('[data-i18n]');
+  elements.forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const translation = translations[lang]?.[key];
+    if (translation) {
+      el.innerHTML = translation;
     }
+  });
+
+  document.body.style.visibility = 'visible';
+
+  const nav = document.querySelector(".nav");
+  const navMenu = document.querySelector(".nav__menu");
+  const footer = document.querySelector(".footer__container");
+
+  if (lang == "ja") {
+    nav.classList.add("nav__japanese");
+    navMenu.classList.add("nav__menu-japanese");
+    footer.classList.add("footer__japanese");
+  } else {
+    nav.classList.remove("nav__japanese");
+    navMenu.classList.remove("nav__menu-japanese");
+    footer.classList.remove("footer__japanese");
+  }
+}
+
+// Restore saved language on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem('siteLanguage') || 'pt-br';
+  changeLanguage(savedLang);
+});
+
+// open a pop up
+
+const languageButton = document.querySelector(".change__language");
+const languageModal = document.querySelector(".language__modal");
+const languageClose = document.querySelector(".language__modal-close");
+
+languageButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  languageModal.classList.add("language__open");
+});
+
+languageClose.addEventListener("click", () => {
+  languageModal.classList.remove("language__open");
+})
+
+// change download link based on language
+
+function getSavedLanguage() {
+  return localStorage.getItem('siteLanguage');
+}
+
+document.getElementById("downloadLink").addEventListener("click", function () {
+  const currentLang = getSavedLanguage();
+  console.log("Current language:", currentLang);
+  let fileName;
+
+  if (currentLang == "pt-br") {
+    fileName = "curriculo.pdf";
+  } else {
+    fileName = "resume.pdf";
   }
 
-  // Restore saved language on page load
-    document.addEventListener("DOMContentLoaded", () => {
-        const savedLang = localStorage.getItem('siteLanguage') || 'pt-br';
-        changeLanguage(savedLang);
-  });
+  console.log("fileName:", fileName);
 
-  // open a pop up
+  const filePath = `./assets/pdf/${fileName}`;
+  this.setAttribute("href", filePath);
 
-  const languageButton = document.querySelector(".change__language");
-  const languageModal = document.querySelector(".language__modal");
-  const languageClose = document.querySelector(".language__modal-close");
-
-  languageButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    languageModal.classList.add("language__open");
-  });
-
-  languageClose.addEventListener("click", () => {
-    languageModal.classList.remove("language__open");
-  })
+})
 
 
