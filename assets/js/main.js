@@ -589,9 +589,37 @@ function changeLanguage(lang) {
   }
 }
 
+ // Function to fetch user geolocation based on IP
+  async function getUserLanguage() {
+    try {
+      const response = await fetch('https://ipinfo.io/json');
+      const data = await response.json();
+      const countryCode = data.country;
+      console.log("code " + countryCode)
+
+      const countryToLang = {
+        'US': 'en',
+        'JP': 'ja',
+        'BR': 'pt-br',
+      };
+
+      const userLang = countryToLang[countryCode] || 'en';
+      return userLang;
+    } catch (error) {
+      console.error("Error fetching IP info:", error);
+      return 'en'; 
+    }
+  }
+
 // Restore saved language on page load
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem('siteLanguage') || 'pt-br';
+document.addEventListener("DOMContentLoaded", async () => {
+  let savedLang = localStorage.getItem('siteLanguage');
+
+  if (!savedLang){
+    savedLang = await getUserLanguage();
+  }
+
+  console.log("after code " + savedLang)
   changeLanguage(savedLang);
 });
 
