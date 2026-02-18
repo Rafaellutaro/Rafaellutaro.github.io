@@ -650,9 +650,9 @@ document.getElementById("downloadLink").addEventListener("click", function () {
   let fileName;
 
   if (currentLang == "pt-br") {
-    fileName = "curriculo.pdf";
+    fileName = "Rafael dos Santos Alves Pires - Dev FullStack.pdf";
   } else {
-    fileName = "resume.pdf";
+    fileName = "Rafael dos Santos Alves Pires - Dev FullStack - english.pdf";
   }
 
   console.log("fileName:", fileName);
