@@ -315,12 +315,12 @@ const translations = {
     'node.level': "Intermediate",
     'python.level': "Basic",
     'asp_net.level': "Basic",
-    'ts.level': "Basic",
-    'react.level': "Basic",
+    'ts.level': "intermediate",
+    'react.level': "intermediate",
     'js.level': "intermediate",
     'html.level': "intermediate",
     'css.level': "intermediate",
-    'flutter.level': "advanced"
+    'flutter.level': "intermediate"
   },
   // portuguese - brazilian
   'pt-br': {
@@ -433,12 +433,12 @@ const translations = {
     'node.level': "Intermediário",
     'python.level': "Básico",
     'asp_net.level': "Básico",
-    'ts.level': "Básico",
-    'react.level': "Básico",
+    'ts.level': "Intermediário",
+    'react.level': "Intermediário",
     'js.level': "Intermediário",
     'html.level': "Intermediário",
     'css.level': "Intermediário",
-    'flutter.level': "Avançado"
+    'flutter.level': "Intermediário"
   },
   // japanese language
   'ja': {
@@ -551,12 +551,12 @@ const translations = {
     'node.level': "中級",
     'python.level': "基礎",
     'asp_net.level': "基礎",
-    'ts.level': "基礎",
-    'react.level': "基礎",
+    'ts.level': "中級",
+    'react.level': "中級",
     'js.level': "中級",
     'html.level': "中級",
     'css.level': "中級",
-    'flutter.level': "上級"
+    'flutter.level': "中級"
   }
 };
 
