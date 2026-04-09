@@ -320,7 +320,10 @@ const translations = {
     'js.level': "intermediate",
     'html.level': "intermediate",
     'css.level': "intermediate",
-    'flutter.level': "intermediate"
+    'flutter.level': "intermediate",
+    'portfolio.title5': "A website for pet adoption",
+    'portfolio.description5': "A website for pet adoption <br> React | PostgreSQL | WebSocket | TypeScript | CSS | Prisma | RestApi | Vercel | Render",
+    'portfolio.button5.1': "Demo"
   },
   // portuguese - brazilian
   'pt-br': {
@@ -438,7 +441,10 @@ const translations = {
     'js.level': "Intermediário",
     'html.level': "Intermediário",
     'css.level': "Intermediário",
-    'flutter.level': "Intermediário"
+    'flutter.level': "Intermediário",
+    'portfolio.title5': "Pet Finder",
+    'portfolio.description5': "Um site para adoção de pets <br> React | Postgresql | WebSocket | Ts | Css | Prisma | ReastApi | Vercel | Render",
+    'portfolio.button5.1': "Demo"
   },
   // japanese language
   'ja': {
@@ -556,7 +562,10 @@ const translations = {
     'js.level': "中級",
     'html.level': "中級",
     'css.level': "中級",
-    'flutter.level': "中級"
+    'flutter.level': "中級",
+    'portfolio.title5': "ペットファインダー (Pet Finder)",
+    'portfolio.description5': "ペットの里親募集サイトです。<br> React | PostgreSQL | WebSocket | TypeScript | CSS | Prisma | Rest API | Vercel | Render",
+    'portfolio.button5.1': "デモ"
   }
 };
 
